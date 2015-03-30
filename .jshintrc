@@ -1,0 +1,15 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "forin" : true,
+  "freeze": true,
+  "futurehostile": true,
+  "latedef": true,
+  "noarg": true,
+  "nocomma": true,
+  "node": true,
+  "nonbsp": true,
+  "strict": true,
+  "undef": true,
+  "unused": true
+}

@@ -1,0 +1,25 @@
+{
+  "name": "wordlist-english",
+  "version": "1.0.0",
+  "description": "A whole lotta English words.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacksonrayhamilton/wordlist-english.git"
+  },
+  "keywords": [
+    "word",
+    "words",
+    "list",
+    "english",
+    "american",
+    "british",
+    "canadian"
+  ],
+  "author": "Jackson Ray Hamilton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacksonrayhamilton/wordlist-english/issues"
+  },
+  "homepage": "https://github.com/jacksonrayhamilton/wordlist-english"
+}
