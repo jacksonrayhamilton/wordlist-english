@@ -8,10 +8,10 @@ Words obtained from the [SCOWL][] project. See the `Copyright` file.
 
 ```js
 var wordlist = require('wordlist-english');
-var englishWords = wordlist.english;
-var americanWords = wordlist.american;
-var britishWords = wordlist.british;
-var canadianWords = wordlist.canadian;
+var englishWords = wordlist['english'];
+var americanWords = wordlist['english/american'];
+var britishWords = wordlist['english/british'];
+var canadianWords = wordlist['english/canadian'];
 
 englishWords.slice(2123, 2128)
 // => [ 'ailing',
