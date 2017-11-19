@@ -23,7 +23,7 @@ function getWordlist (name, frequency) {
   return processWordlist(fs.readFileSync(filePath, 'utf8'));
 }
 
-['english', 'american', 'british', 'canadian'].forEach(function (nationality) {
+['english', 'american', 'australian', 'british', 'canadian'].forEach(function (nationality) {
   [10, 20, 35, 40, 50, 55, 60, 70].forEach(function (frequency) {
     var filePath = path.join(__dirname, '..', nationality + '-words-' + frequency + '.json');
     fs.writeFileSync(filePath, JSON.stringify(getWordlist(nationality + '-words', frequency)));

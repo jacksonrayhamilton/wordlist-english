@@ -37,6 +37,7 @@ Obtain English words exclusive to different dialects of English:
 
 ```js
 var americanWords = wordlist['english/american'];
+var australianWords = wordlist['english/australian'];
 var britishWords = wordlist['english/british'];
 var canadianWords = wordlist['english/canadian'];
 

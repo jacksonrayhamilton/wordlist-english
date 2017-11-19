@@ -6,7 +6,7 @@ var {__dirname} = expose; // eslint-disable-line no-shadow
 
 var wordlist = {};
 
-['english', 'american', 'british', 'canadian'].forEach(function (dialect) {
+['english', 'american', 'australian', 'british', 'canadian'].forEach(function (dialect) {
   var dialectKey = dialect === 'english' ? dialect : 'english/' + dialect;
   var dialectWords = [];
   [10, 20, 35, 40, 50, 55, 60, 70].forEach(function (frequency) {
