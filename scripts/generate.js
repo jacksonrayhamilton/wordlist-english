@@ -3,25 +3,31 @@
 var fs = require('fs');
 var path = require('path');
 
-function getWordlist(name) {
-    var contents = [10, 20, 35, 40, 50, 55, 60, 70].map(function (number) {
-        var filePath = path.join(__dirname, '..', 'sources', name + '.' + number);
-        return fs.readFileSync(filePath, 'utf8');
-    }).join('');
+function splitWordlist(contents) {
+    return contents.trim().split('\n');
+}
 
-    return contents.split('\n')
-        .filter(function (word) {
-            if (/'s$/.test(word)) {
-                return false;
-            }
-            return true;
-        })
-        .sort();
+function removePossesives(words) {
+    return words.filter(function (word) {
+        return !/'s$/.test(word);
+    });
+}
+
+function processWordlist(wordlist) {
+    return removePossesives(splitWordlist(wordlist)).sort();
+}
+
+function getWordlist(name, frequency) {
+    var filePath = path.join(__dirname, '..', 'sources', name + '.' + frequency);
+    return processWordlist(fs.readFileSync(filePath, 'utf8'));
 }
 
 var nationalities = ['english', 'american', 'british', 'canadian'];
+var frequencies = [10, 20, 35, 40, 50, 55, 60, 70];
 
 nationalities.forEach(function (nationality) {
-    var filePath = path.join(__dirname, '..', nationality + '-words.json');
-    fs.writeFileSync(filePath, JSON.stringify(getWordlist(nationality + '-words')));
+    frequencies.forEach(function (frequency) {
+        var filePath = path.join(__dirname, '..', nationality + '-words-' + frequency + '.json');
+        fs.writeFileSync(filePath, JSON.stringify(getWordlist(nationality + '-words', frequency)));
+    });
 });
