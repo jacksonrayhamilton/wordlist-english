@@ -95,5 +95,11 @@ module.exports = {
 
     'max-statements-per-line': ['error'],
     'semi': ['error'],
+
+    // ECMAScript 6
+
+    'no-const-assign': ['error'],
+    'no-dupe-class-members': ['error'],
+    'require-yield': ['error'],
   },
 };
