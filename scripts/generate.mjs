@@ -1,7 +1,8 @@
-'use strict';
+import fs from 'fs';
+import path from 'path';
 
-var fs = require('fs');
-var path = require('path');
+import expose from './expose';
+var {__dirname} = expose; // eslint-disable-line no-shadow
 
 function splitWordlist (contents) {
   return contents.trim().split('\n');

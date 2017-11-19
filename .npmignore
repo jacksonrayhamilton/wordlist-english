@@ -1,4 +1,6 @@
+.babelrc
 .editorconfig
+.eslintignore
 .eslintrc.js
 scripts/
 sources/

@@ -6,10 +6,16 @@ Words obtained from the [SCOWL][] project. See the `Copyright` file.
 
 [SCOWL]: http://wordlist.aspell.net/
 
+You can import the module as an ES module or using CommonJS:
+
+```js
+import wordlist from 'wordlist-english'; // ES Modules
+var wordlist = require('wordlist-english'); // CommonJS
+```
+
 Obtain all English words which are not exclusive to any dialect of English:
 
 ```js
-var wordlist = require('wordlist-english');
 var englishWords = wordlist['english'];
 
 englishWords.slice(2123, 2128)
