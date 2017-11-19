@@ -1,6 +1,6 @@
 {
   "name": "wordlist-english",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A whole lotta English words.",
   "scripts": {
     "build": "babel '*.mjs' --out-dir .",
