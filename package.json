@@ -6,7 +6,7 @@
     "build": "babel '*.mjs' --out-dir .",
     "watch": "babel '*.mjs' --watch --extensions .mjs --out-dir .",
     "generate": "node --experimental-modules scripts/generate.mjs",
-    "prepublish": "npm run generate && npm run build"
+    "prepare": "npm run generate && npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
