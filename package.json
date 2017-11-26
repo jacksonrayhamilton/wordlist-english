@@ -4,17 +4,15 @@
   "description": "A whole lotta English words.",
   "scripts": {
     "lint": "eslint --ext .mjs,.js .",
-    "build": "babel '*.mjs' --out-dir .",
-    "watch": "babel '*.mjs' --watch --extensions .mjs --out-dir .",
+    "build": "esm2cjs",
+    "watch": "esm2cjs --watch",
     "generate": "node --experimental-modules scripts/generate.mjs",
     "prepare": "npm run generate && npm run build"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "jacksonrayhamilton/babel-plugin-transform-es2015-modules-commonjs#b0b9a88",
     "eslint": "^4.12.0",
-    "eslint-config-will-robinson": "^1.0.0"
+    "eslint-config-will-robinson": "^1.0.0",
+    "esm2cjs": "^1.0.2"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
-.babelrc
 .editorconfig
 .eslintignore
 .eslintrc
+.esm2cjs
 scripts/
 sources/

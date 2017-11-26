@@ -1,9 +1,0 @@
-{
-  "plugins": [
-    "add-module-exports",
-    ["transform-es2015-modules-commonjs", {
-      "strict": true,
-      "importCommonJS": true
-    }]
-  ]
-}
