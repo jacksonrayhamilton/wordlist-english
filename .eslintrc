@@ -1,0 +1,3 @@
+{
+  "extends": "will-robinson/node-esm"
+}
