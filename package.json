@@ -1,6 +1,6 @@
 {
   "name": "wordlist-english",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A whole lotta English words.",
   "scripts": {
     "lint": "eslint --ext .mjs,.js .",
