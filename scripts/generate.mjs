@@ -20,7 +20,7 @@ function processWordlist (wordlist) {
 
 function getWordlist (name, frequency) {
   var filePath = path.join(__dirname, '..', 'sources', name + '.' + frequency);
-  return processWordlist(fs.readFileSync(filePath, 'utf8'));
+  return processWordlist(fs.readFileSync(filePath, 'latin1'));
 }
 
 ['english', 'american', 'australian', 'british', 'canadian'].forEach(function (nationality) {
