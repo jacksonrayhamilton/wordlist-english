@@ -80,7 +80,7 @@ const bundles = [
   },
 ];
 
-function normalizeWordlist(words) {
+function normalizeWordlist(words: string[]): string[] {
   // Filter out possessive words (ending in "'s")
   words = words.filter((word) => !word.endsWith('\'s'));
   // Remove duplicates
@@ -90,7 +90,7 @@ function normalizeWordlist(words) {
   return words;
 }
 
-function main() {
+function main(): void {
 
   bundles.forEach(({ name, locales, maxFrequency }) => {
     const frequencies = allFrequencies.slice(0, allFrequencies.indexOf(maxFrequency) + 1);
@@ -99,7 +99,7 @@ function main() {
       // Handle cases where expansion syntax has only one element in it
       .replace(/\{(\w+)\}/, '$1')
     );
-    const words = files.reduce((acc, file) => {
+    const words = files.reduce<string[]>((acc, file) => {
       acc.push(...normalizeWordlist(fs.readFileSync(file, 'latin1').trim().split('\n')));
       return acc;
     }, []);
