@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "build": "node scripts/build.js"
+    "prepare": "node scripts/build.js"
   },
   "devDependencies": {
     "eslint": "^4.12.0",
