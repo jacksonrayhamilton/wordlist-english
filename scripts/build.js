@@ -92,7 +92,7 @@ function normalizeWordlist(words) {
 
 function main() {
 
-  bundles.forEach(async ({ name, locales, maxFrequency }) => {
+  bundles.forEach(({ name, locales, maxFrequency }) => {
     const frequencies = allFrequencies.slice(0, allFrequencies.indexOf(maxFrequency) + 1);
     const files = globSync(
       `sources/{${locales.join(',')}}-words.{${frequencies.join(',')}}`
@@ -107,4 +107,4 @@ function main() {
   });
 
 }
-main()
+main();
