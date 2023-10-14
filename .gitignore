@@ -1,3 +1,15 @@
 !expose.js
 /*-words-*.json
 /node_modules/
+index.js
+common.js
+all.js
+american.js
+americanOnly.js
+australian.js
+australianOnly.js
+british.js
+britishOnly.js
+canadian.js
+canadianOnly.js
+noLocale.js
