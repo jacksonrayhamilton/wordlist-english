@@ -14,7 +14,7 @@ import veryCommonWords from 'wordlist-english/veryCommon';
 
 Words like these will be included in each of these files:
 
-```
+```js
 import allWords from 'wordlist-english/all';
 import englishWords from 'wordlist-english';
 import commonWords from 'wordlist-english/common';
@@ -39,7 +39,7 @@ tempos uncommoner
 
 Words like these will be included in each of these files:
 
-```
+```js
 import allWords from 'wordlist-english/all';
 import englishWords from 'wordlist-english';
 import commonWords from 'wordlist-english/common';
@@ -77,7 +77,7 @@ phosphorescently reforging reintegrate stringiness transecting vixenishly
 
 Words like these will be included in each of these files:
 
-```
+```js
 import allWords from 'wordlist-english/all';
 import englishWords from 'wordlist-english';
 ```
@@ -93,6 +93,6 @@ talapoin unresigned whickered
 
 Words like these will only be included in this file:
 
-```
+```js
 import allWords from 'wordlist-english/all';
 ```

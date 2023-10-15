@@ -81,7 +81,7 @@ const veryCommonWords = (await import('wordlist-english/veryCommon')).default;
 
 If you want a big list of English words including only spellings true to a particular dialect of English (e.g. American spellings, without Australian/British/Canadian spellings), then use these lists:
 
-```
+```js
 import americanWords from 'wordlist-english/american';
 import australianWords from 'wordlist-english/australian';
 import britishWords from 'wordlist-english/british';
@@ -92,7 +92,7 @@ Note that each of the above lists is about the same size as the default list.
 
 If you want to implement an application that supports multiple dialects of English, you may wish to import a list of words common to all locales, and combine that list with a smaller list of words exclusive to a chosen locale:
 
-```
+```js
 import noLocaleWords from 'wordlist-english/noLocale';
 import americanOnlyWords from 'wordlist-english/americanOnly';
 import australianOnlyWords from 'wordlist-english/australianOnly';
