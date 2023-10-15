@@ -1,5 +1,6 @@
 // Bundles to output:
 // index.js
+// veryCommon.js
 // common.js
 // all.js
 // american.js
@@ -21,6 +22,11 @@ const bundles = [
   {
     name: 'index',
     maxFrequency: 60,
+    locales: ['english', 'american', 'australian', 'british', 'canadian'],
+  },
+  {
+    name: 'veryCommon',
+    maxFrequency: 10,
     locales: ['english', 'american', 'australian', 'british', 'canadian'],
   },
   {
