@@ -91,7 +91,6 @@ function normalizeWordlist(words) {
 }
 
 function main() {
-
   bundles.forEach(({ name, locales, maxFrequency }) => {
     const frequencies = allFrequencies.slice(0, allFrequencies.indexOf(maxFrequency) + 1);
     const files = globSync(
@@ -105,6 +104,6 @@ function main() {
     }, []);
     fs.writeFileSync(`${name}.js`, `export default ${JSON.stringify(words)};`);
   });
-
 }
+
 main();
