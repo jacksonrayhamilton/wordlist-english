@@ -1,5 +1,6 @@
 // Bundles to output:
 // index.js
+// veryCommon.js
 // common.js
 // all.js
 // american.js
@@ -21,6 +22,11 @@ const bundles = [
   {
     name: 'index',
     maxFrequency: 60,
+    locales: ['english', 'american', 'australian', 'british', 'canadian'],
+  },
+  {
+    name: 'veryCommon',
+    maxFrequency: 10,
     locales: ['english', 'american', 'australian', 'british', 'canadian'],
   },
   {
@@ -81,8 +87,9 @@ const bundles = [
 ];
 
 function normalizeWordlist(words) {
-  // Filter out possessive words (ending in "'s")
-  words = words.filter((word) => !word.endsWith('\'s'));
+  // Filter out "G'day", "OK", proper nouns,
+  // and possessive words (ending in "'s")
+  words = words.filter((word) => !/^[A-Z]/.test(word) && !word.endsWith('\'s'));
   // Remove duplicates
   words = [...new Set(words)];
   // Sort all words alphabetically
@@ -91,7 +98,6 @@ function normalizeWordlist(words) {
 }
 
 function main() {
-
   bundles.forEach(({ name, locales, maxFrequency }) => {
     const frequencies = allFrequencies.slice(0, allFrequencies.indexOf(maxFrequency) + 1);
     const files = globSync(
@@ -99,12 +105,11 @@ function main() {
       // Handle cases where expansion syntax has only one element in it
       .replace(/\{(\w+)\}/, '$1')
     );
-    const words = files.reduce((acc, file) => {
-      acc.push(...normalizeWordlist(fs.readFileSync(file, 'latin1').trim().split('\n')));
-      return acc;
-    }, []);
+    const words = normalizeWordlist(files.reduce((acc, file) => (
+      [...acc, ...fs.readFileSync(file, 'latin1').trim().split('\n')]
+    ), []));
     fs.writeFileSync(`${name}.js`, `export default ${JSON.stringify(words)};`);
   });
-
 }
+
 main();
