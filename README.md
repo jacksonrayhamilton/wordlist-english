@@ -2,7 +2,7 @@
 
 A bunch of English words in JSON format.
 
-Words obtained from the [SCOWL][] project. See the `Copyright (SCOWL)` file.
+Words obtained from the [SCOWL][] project. See the `Copyright` file.
 
 [SCOWL]: http://wordlist.aspell.net/
 
