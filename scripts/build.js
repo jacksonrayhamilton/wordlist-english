@@ -104,9 +104,9 @@ function main() {
       // Handle cases where expansion syntax has only one element in it
       .replace(/\{(\w+)\}/, '$1')
     );
-    const words = files.reduce((acc, file) => (
-      [...acc, ...normalizeWordlist(fs.readFileSync(file, 'latin1').trim().split('\n'))]
-    ), []);
+    const words = normalizeWordlist(files.reduce((acc, file) => (
+      [...acc, ...fs.readFileSync(file, 'latin1').trim().split('\n')]
+    ), []));
     fs.writeFileSync(`${name}.js`, `export default ${JSON.stringify(words)};`);
   });
 }
