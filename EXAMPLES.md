@@ -1,4 +1,6 @@
-# Very common words; (in lists: All, Default, Common, Very Common)
+# Examples
+
+## Very common words; (in lists: All, Default, Common, Very Common)
 
 ```
 attempt base borrows clever cold concerned contribution decide deletes
@@ -21,7 +23,7 @@ import commonWords from 'wordlist-english/common';
 import veryCommonWords from 'wordlist-english/veryCommon';
 ```
 
-# Common words; (in lists: All, Default, Common)
+## Common words; (in lists: All, Default, Common)
 
 ```
 brave comma confining conviction delicious embedding enlarging equations
@@ -45,7 +47,7 @@ import englishWords from 'wordlist-english';
 import commonWords from 'wordlist-english/common';
 ```
 
-# Less common words; (in lists: All, Default)
+## Less common words; (in lists: All, Default)
 
 ```
 astrologer bestsellers busboys childproofed clapboarded crispiest
@@ -82,7 +84,7 @@ import allWords from 'wordlist-english/all';
 import englishWords from 'wordlist-english';
 ```
 
-# Obscure words; (in lists: All)
+## Obscure words; (in lists: All)
 
 ```
 animalisms bestializing blague chlorpromazine decury dolmans ecclesiology
