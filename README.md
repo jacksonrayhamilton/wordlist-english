@@ -45,7 +45,6 @@ If you simply want a big list of English words that most English speakers would 
 
 ```js
 import englishWords from 'wordlist-english';
-const englishWords = (await import('wordlist-english')).default;
 ```
 
 ### Full List (406kb gzipped)
@@ -54,7 +53,6 @@ If you want an even larger list of words that includes very obscure words (for w
 
 ```js
 import allWords from 'wordlist-english/all';
-const allWords = (await import('wordlist-english/all')).default;
 ```
 
 ### Smaller List (120kb gzipped)
@@ -63,7 +61,6 @@ If you want a smaller list of words that are more commonly-used, then import the
 
 ```js
 import commonWords from 'wordlist-english/common';
-const commonWords = (await import('wordlist-english/common')).default;
 ```
 
 This list won’t be as useful for spell checking, but it still offers an abundance of words, without too many “strange” words mixed-in.
@@ -74,7 +71,6 @@ The smallest list of words that this package offers includes only the most-commo
 
 ```js
 import veryCommonWords from 'wordlist-english/veryCommon';
-const veryCommonWords = (await import('wordlist-english/veryCommon')).default;
 ```
 
 ### Dialectal Lists
