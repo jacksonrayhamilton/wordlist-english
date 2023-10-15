@@ -87,8 +87,9 @@ const bundles = [
 ];
 
 function normalizeWordlist(words) {
-  // Filter out possessive words (ending in "'s")
-  words = words.filter((word) => !word.endsWith('\'s'));
+  // Filter out "G'day", "OK", proper nouns,
+  // and possessive words (ending in "'s")
+  words = words.filter((word) => !/^[A-Z]/.test(word) && !word.endsWith('\'s'));
   // Remove duplicates
   words = [...new Set(words)];
   // Sort all words alphabetically
