@@ -37,7 +37,7 @@ const englishWords = (await import('wordlist-english')).default;
 
 ## Available Lists
 
-To see examples of the types of words in each list, see [SAMPLES.md](SAMPLES.md).
+To see examples of the types of words in each list, see [EXAMPLES.md](EXAMPLES.md).
 
 ### Default List (270kb gzipped)
 
