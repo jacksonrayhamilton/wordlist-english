@@ -2,7 +2,7 @@
 
 A bunch of English words in JSON format.
 
-Words obtained from the [SCOWL][] project. See the `Copyright (SCOWL)` file.
+Words obtained from the [SCOWL][] project. See the `Copyright` file.
 
 [SCOWL]: http://wordlist.aspell.net/
 
@@ -37,41 +37,41 @@ const englishWords = (await import('wordlist-english')).default;
 
 ## Available Lists
 
-To see examples of the types of words in each list, see [SAMPLES.md](SAMPLES.md).
+To see examples of the types of words in each list, see [EXAMPLES.md](EXAMPLES.md).
 
 ### Default List (270kb gzipped)
 
-If you simply want a big list of English words that most English speakers would possibly say or write (all dialects included: American, Australian, British, Canadian), then import the package’s index file:
+If you simply want a big list of English words that most English speakers would possibly say or write, then import the package’s index file:
 
 ```js
 import englishWords from 'wordlist-english';
 ```
 
+This list will be useful for spell checking.  It also includes variants of words from all dialects of English: American, Australian, British, and Canadian.
+
 ### Full List (406kb gzipped)
 
-If you want an even larger list of words that includes very obscure words (for word games), then import the “all” file:
+If you want a larger, dictionary-sized list of words that includes more obscure words, then import the “all” file:
 
 ```js
 import allWords from 'wordlist-english/all';
 ```
 
-### Smaller List (120kb gzipped)
+This list contains some valid yet problematic words (such as “calender”) that could be a misspelling of a more common word, so it may not be optimal for spell checking.
 
-If you want a smaller list of words that are more commonly-used, then import the “common” file:
+Like the default list, this list includes variants of words from all dialects of English.
+
+### Small List (12kb gzipped)
+
+If you want a small list of words that are considered the most-commonly-used in English, then import the “common” file:
 
 ```js
 import commonWords from 'wordlist-english/common';
 ```
 
-This list won’t be as useful for spell checking, but it still offers an abundance of words, without too many “strange” words mixed-in.
+This list won’t be useful for spell checking, but it will be suitable for sampling random words, none of which should seem unusual to any English speaker.  It’s also small enough to have a minimal impact on a web application’s load time.
 
-### Smallest List (12kb gzipped)
-
-The smallest list of words that this package offers includes only the most-commonly-used English words.  You are unlikely to ever encounter a “strange” word.  It will have a minimal impact on page load in web applications.
-
-```js
-import veryCommonWords from 'wordlist-english/veryCommon';
-```
+Like the default list, this list includes variants of words from all dialects of English.
 
 ### Dialectal Lists
 

@@ -1,6 +1,6 @@
 # Examples
 
-## Very common words; (in lists: All, Default, Common, Very Common)
+## Common words; (in lists: All, Default, Common)
 
 ```
 attempt base borrows clever cold concerned contribution decide deletes
@@ -11,7 +11,7 @@ potential signed significance standing survey this training trick
 To get _only_ words like these, import this file:
 
 ```js
-import veryCommonWords from 'wordlist-english/veryCommon';
+import commonWords from 'wordlist-english/common';
 ```
 
 Words like these will be included in each of these files:
@@ -20,10 +20,9 @@ Words like these will be included in each of these files:
 import allWords from 'wordlist-english/all';
 import englishWords from 'wordlist-english';
 import commonWords from 'wordlist-english/common';
-import veryCommonWords from 'wordlist-english/veryCommon';
 ```
 
-## Common words; (in lists: All, Default, Common)
+## Less common words; (in lists: All, Default)
 
 ```
 brave comma confining conviction delicious embedding enlarging equations
@@ -38,16 +37,6 @@ expressly glistened humping joyfully leashes lofting logician obsessions
 paralytics pillowed portrayals pruned rarities reconfigured scrupulous
 tempos uncommoner
 ```
-
-Words like these will be included in each of these files:
-
-```js
-import allWords from 'wordlist-english/all';
-import englishWords from 'wordlist-english';
-import commonWords from 'wordlist-english/common';
-```
-
-## Less common words; (in lists: All, Default)
 
 ```
 astrologer bestsellers busboys childproofed clapboarded crispiest
@@ -93,7 +82,7 @@ natality ninepence pyrogenic rath sabayons serenata shitwork superlunary
 talapoin unresigned whickered
 ```
 
-Words like these will only be included in this file:
+Words like these will _only_ be included in this file:
 
 ```js
 import allWords from 'wordlist-english/all';
