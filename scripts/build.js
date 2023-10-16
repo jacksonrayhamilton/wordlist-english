@@ -25,13 +25,8 @@ const bundles = [
     locales: ['english', 'american', 'australian', 'british', 'canadian'],
   },
   {
-    name: 'veryCommon',
-    maxFrequency: 10,
-    locales: ['english', 'american', 'australian', 'british', 'canadian'],
-  },
-  {
     name: 'common',
-    maxFrequency: 35,
+    maxFrequency: 10,
     locales: ['english', 'american', 'australian', 'british', 'canadian'],
   },
   {
