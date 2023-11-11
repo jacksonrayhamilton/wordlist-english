@@ -15,13 +15,13 @@ npm install wordlist-english
 ```
 
 ```js
-import englishWords from 'wordlist-english';
+import englishWords from 'wordlist-english/english';
 
-englishWords[2**12] // => 'auditor'
-englishWords[2**13] // => 'bridle'
-englishWords[2**14] // => 'crude'
-englishWords[2**15] // => 'highways'
-englishWords[2**16] // => 'soar'
+englishWords[2**12] // => 'affection'
+englishWords[2**13] // => 'paged'
+englishWords[2**14] // => 'cuticles'
+englishWords[2**15] // => 'sleets'
+englishWords[2**16] // => 'antineutrino'
 ```
 
 However, if you are using the words in a web application, it may be wiser to use a [dynamic import][] so you can more quickly serve your web page—i.e., without waiting for a large list of words to download as part of your main JavaScript bundle.
@@ -29,7 +29,7 @@ However, if you are using the words in a web application, it may be wiser to use
 [dynamic import]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import
 
 ```js
-const englishWords = (await import('wordlist-english')).default;
+const englishWords = (await import('wordlist-english/english.js')).default;
 // The words won’t be available synchronously, but depending on how your
 // application works it might be okay or preferable to load the words in the
 // background or on-demand.
