@@ -17,11 +17,11 @@ function normalizeWordlist(words) {
 function writeIndexBundleForCategory(category) {
   const template = [
     ...allFrequencies.map((frequency) => {
-      return `import ${category}${frequency} from './${category}-${frequency}.js';`;
+      return `import ${category}${frequency} from './${category}${frequency}.js';`;
     }),
     `export default [${allFrequencies.map((frequency) => {
       return `...${category}${frequency}`;
-    }).join(',')}];`
+    }).join(', ')}];`
   ].join('\n');
   fs.writeFileSync(`${category}.js`, template);
 }
@@ -35,7 +35,7 @@ function main() {
         fs.readFileSync(sourceFilePath, 'latin1').trim().split('\n')
       );
       fs.writeFileSync(
-        `${category}-${frequency}.js`,
+        `${category}${frequency}.js`,
         `export default ${JSON.stringify(words)};`
       );
     });
