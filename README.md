@@ -51,8 +51,6 @@ const words = (await import('wordlist-english/english.js')).default;
 
 ## Available Lists
 
-To see examples of the types of words in each list, see [EXAMPLES.md](EXAMPLES.md).
-
 ### Words Common to All Locales
 
 ```js
