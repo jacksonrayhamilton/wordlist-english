@@ -1,6 +1,6 @@
 # wordlist-english
 
-A bunch of English words in JSON format.
+A bunch of English words in JavaScript arrays exported from ES modules.
 
 Words obtained from the [SCOWL][] project. See the `Copyright` file.
 
@@ -127,13 +127,13 @@ import canadian70 from 'wordlist-english/canadian70.js';
 
 ## Combining Lists
 
-### Creating an American-oriented Dictionary
+### Creating a List of Most Words Appearing in American English Dictionaries
 
 ```js
 import commonToAllLocales from 'wordlist-english/english.js';
 import americanSpellingsOnly from 'wordlist-english/american.js';
 
-const americanDictionary = [...commonToAllLocales, ...americanSpellingsOnly];
+const americanWords = [...commonToAllLocales, ...americanSpellingsOnly];
 ```
 
 ### Creating a List of Words Common in American Usage

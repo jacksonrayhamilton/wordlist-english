@@ -2,13 +2,17 @@
 
 ## Notes
 
-Words originate from the SCOWL project which organizes them according to their frequency, into lists of different “sizes.”  Words from list “Size: 10” appear most frequently in English usage, whereas words from list “Size: 70” appear least frequently.  (All the sizes included are: 10, 20, 35, 40, 50, 55, 60, 70.)  Here are some additional notes from the SCOWL authors regarding these sizes:
+Words originate from the SCOWL project which organizes them according to their frequency, into lists of different “sizes.”  Words from list “Size: 10” appear most frequently in English usage, whereas words from list “Size: 70” appear least frequently.  All the sizes included are: 10, 20, 35, 40, 50, 55, 60, 70
+
+Here are some additional notes from the SCOWL authors regarding these sizes:
 
 > Size 35 is the recommended small size, 50 the medium and 70 the large.  Size 70 and below contains words found in most dictionaries.
 
 > For spell checking I recommend using size 60.  This size is the largest size that I am fairly confident does not contain any misspellings or invalid words.  In addition an effort is made to exclude valid yet problematic words (such as “calender”) from the 60 size that are likely to be a misspelling of a more common word.  The 70 size is reasonable for those wanting a larger list and don’t mind a few errors.
 
 ## Size: 10
+
+Examples of words found _only_ in this size:
 
 ```
 attempt base borrows clever cold concerned contribution decide deletes
@@ -27,6 +31,8 @@ import canadian10 from 'wordlist-english/canadian10.js';
 ```
 
 ## Size: 20
+
+Examples of words found _only_ in this size:
 
 ```
 brave comma confining conviction delicious embedding enlarging equations
@@ -47,6 +53,8 @@ import canadian20 from 'wordlist-english/canadian20.js';
 
 ## Size: 35
 
+Examples of words found _only_ in this size:
+
 ```
 bantered barrens bronzing chisel debtors doorstep earache elaborating
 expressly glistened humping joyfully leashes lofting logician obsessions
@@ -65,6 +73,8 @@ import canadian35 from 'wordlist-english/canadian35.js';
 ```
 
 ## Size: 40
+
+Examples of words found _only_ in this size:
 
 ```
 astrologer bestsellers busboys childproofed clapboarded crispiest
@@ -85,6 +95,8 @@ import canadian40 from 'wordlist-english/canadian40.js';
 
 ## Size: 50
 
+Examples of words found _only_ in this size:
+
 ```
 apologias assay biochemists brashness brattier councilman detainees
 discontentedly ethnology evincing excoriation halberd housemothers
@@ -103,6 +115,8 @@ import canadian50 from 'wordlist-english/canadian50.js';
 ```
 
 ## Size: 55
+
+Examples of words found _only_ in this size:
 
 ```
 articulacy bookbinders chapati faffing gunge hotpots hurtfulness innit
@@ -123,6 +137,8 @@ import canadian55 from 'wordlist-english/canadian55.js';
 
 ## Size: 60
 
+Examples of words found _only_ in this size:
+
 ```
 allurements bespangle centripetally dashers eclogue estoppel ethologist
 gleaners gratingly imputable jobholder mendicancy minnesingers muscats
@@ -141,6 +157,8 @@ import canadian60 from 'wordlist-english/canadian60.js';
 ```
 
 ## Size: 70
+
+Examples of words found _only_ in this size:
 
 ```
 animalisms bestializing blague chlorpromazine decury dolmans ecclesiology
